@@ -2,7 +2,7 @@
   background-color: $second-light;
   padding: 2rem 0 3rem;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   @include heading($second-light, #fff, $dark-color);
 

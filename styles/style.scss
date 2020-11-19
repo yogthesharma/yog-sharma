@@ -21,6 +21,10 @@ body {
   scroll-behavior: smooth !important;
 }
 
+.second-body {
+  overflow-y: hidden !important;
+}
+
 p {
   line-height: 28px;
   letter-spacing: 0.9px;

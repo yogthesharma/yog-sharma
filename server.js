@@ -20,7 +20,7 @@ const random = Math.floor(Math.random() * quoteArr().length);
 
 app.get("/", (req, res) => {
   res.render("index", {
-    title: "Hope It Works",
+    title: "Project Title",
     dynamic: "https://picsum.photos/200",
     quote: quoteArr()[random],
   });

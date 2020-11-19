@@ -64,6 +64,7 @@ hamburger.addEventListener("click", () => {
   document.querySelector("nav").classList.add("newnav");
   nav.classList.toggle("nav-click");
   body.classList.toggle("second-body");
+  hamlinks.forEach((val) => val.classList.toggle("a-click"));
 });
 
 hamlinks.forEach((val) =>
