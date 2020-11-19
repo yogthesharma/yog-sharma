@@ -11,18 +11,14 @@ $light-color: #c4dfe6;
 }
 
 // html {
-//   scroll-behavior: smooth !important;
+//
 // }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden !important;
   height: 100vh;
   overflow-y: scroll !important;
   scroll-behavior: smooth !important;
-}
-
-.second-body {
-  overflow-y: hidden !important;
 }
 
 p {
