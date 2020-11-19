@@ -1,0 +1,186 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero1-div {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  animation: disposing-hello 2s ease forwards;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mouse-down-anime 1.5s ease infinite;
+  }
+
+  animation: disposing-hello 2s ease forwards;
+}
+
+@keyframes disposing-hello {
+  0% {
+    width: 100%;
+  }
+  30% {
+    width: 80%;
+  }
+  70% {
+    transform: translateY(-100%);
+  }
+
+  80% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}
+
+.hero1-div::before {
+  content: "";
+  position: absolute;
+  background-color: $second-light;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero1-div::after {
+  content: "";
+  position: absolute;
+  background-color: $dark-color;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@keyframes mouse-down-anime {
+  0% {
+    top: 88%;
+  }
+  50% {
+    top: 90%;
+  }
+  100% {
+    top: 88%;
+  }
+}
+
+.hero2-div {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .typer {
+    background-color: white;
+    font-family: monospace;
+    line-height: 0;
+    font-weight: 100;
+  }
+
+  img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: mouse-down-anime 1.5s ease infinite;
+  }
+}
+
+.hero2-div::before {
+  content: "";
+  position: absolute;
+  background-color: $dark-color;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero2-div::after {
+  content: "";
+  position: absolute;
+  background-color: $second-light;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+// media queries
+@media only screen and (max-width: 420px) {
+  .wrapper {
+    img {
+      display: none;
+    }
+  }
+
+  .hero1-div {
+    h1 {
+      font-size: 100px;
+    }
+  }
+
+  .hero2-div {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 920px) {
+  .wrapper {
+    img {
+      display: none;
+    }
+  }
+
+  .hero1-div {
+    height: 100vh;
+    h1 {
+      font-size: 100px;
+    }
+  }
+
+  .hero2-div {
+    height: 100vh;
+    h1 {
+      font-size: 30px;
+    }
+  }
+} ;

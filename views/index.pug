@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- css file link
+        link(rel="stylesheet", href="style.css")
+
+        //- google fonts link
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap")
+
+        //- fontawesome cdn
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        title Yog Sharma
+
+        //- swiper slider
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+
+        //- animate on scroll
+        link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
+    body
+    
+        include components/navbar.pug
+
+        include includes/hero1.pug
+
+        include includes/about-me.pug
+        
+        include includes/technology.pug
+
+        include includes/portfolio.pug
+
+        include includes/quote.pug
+
+        include includes/contact.pug
+
+        include components/nav-hover.pug
+
+        
+        
+
+        
+        //- swiper slider
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+
+        //- typer js
+        script(async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js")
+
+        //- animate on scroll
+        script(src="https://unpkg.com/aos@next/dist/aos.js")
+
+        //- smooth scroll
+
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        script.
+            var scroll = new SmoothScroll('.navbar a[href*="#"]', {
+                speed: 500,
+            });
+
+
+        script(src="app.js")

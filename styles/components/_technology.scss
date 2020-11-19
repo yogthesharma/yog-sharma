@@ -1,0 +1,90 @@
+.technology {
+  background-color: $second-light;
+  padding: 2rem 0 3rem;
+  position: relative;
+
+  @include heading($second-light, #fff, $dark-color);
+
+  .main-technology {
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .upper-div,
+    .lower-div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .one {
+      padding: 0 20px;
+      a {
+        img {
+          transform: scale(0.6);
+        }
+      }
+
+      @include hexagon;
+    }
+
+    .two {
+      padding: 0 20px;
+
+      @include hexagon;
+    }
+    .three {
+      padding: 0 20px;
+
+      @include hexagon;
+    }
+    .four {
+      padding: 0 20px;
+
+      @include hexagon;
+    }
+    .five {
+      padding: 0 20px;
+
+      @include hexagon;
+    }
+    .six {
+      padding: 0 20px;
+
+      @include hexagon;
+    }
+    .seven {
+      padding: 0 20px;
+
+      @include hexagon;
+    }
+  }
+}
+
+// media queries
+@media only screen and (max-width: 420px) {
+  .main-technology {
+    .upper-div,
+    .lower-div {
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 920px) {
+  .main-technology {
+    .upper-div,
+    .lower-div {
+      flex: 30%;
+    }
+  }
+}

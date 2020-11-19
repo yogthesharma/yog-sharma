@@ -1,0 +1,33 @@
+.nav-hover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  width: 100vw;
+  height: 100vh;
+  background-color: $dark-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style: none;
+    height: 50%;
+    a {
+      font-size: 25px;
+      color: $light-color;
+      letter-spacing: 3px;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-click {
+  transform: translateX(0);
+}

@@ -1,0 +1,127 @@
+nav {
+  filter: drop-shadow(0px 4px 60px rgba(0, 0, 0, 0.192));
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  background-color: #fff;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+}
+
+.inner-nav {
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  h3 {
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  ul {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    list-style: none;
+
+    li {
+      padding: 0 1rem;
+
+      a {
+        display: block;
+        color: $second-dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        position: relative;
+        overflow: hidden;
+        padding: 0.2rem 0;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        // padding: 1rem;
+        height: 2px;
+        width: 100%;
+        bottom: 0px;
+        background-color: $second-dark;
+        left: -100%;
+        transition: all 0.3s ease;
+      }
+
+      a:hover::after {
+        left: 0;
+      }
+    }
+
+    li:nth-last-child(1) {
+      padding: unset;
+    }
+  }
+
+  .hamburger {
+    position: absolute;
+    display: none;
+    right: 0;
+  }
+}
+
+.newnav {
+  transform: translateY(0);
+}
+
+// media querries
+
+@media only screen and (max-width: 420px) {
+  .inner-nav {
+    ul {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      cursor: pointer;
+
+      div {
+        height: 2px;
+        width: 30px;
+        background-color: $second-dark;
+      }
+
+      div:nth-child(1),
+      div:nth-child(2) {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 920px) {
+  .inner-nav {
+    ul {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      cursor: pointer;
+
+      div {
+        height: 2px;
+        width: 30px;
+        background-color: $second-dark;
+      }
+
+      div:nth-child(1),
+      div:nth-child(2) {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}

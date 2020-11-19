@@ -1,0 +1,60 @@
+$dark-color: #003b46;
+$second-dark: #07575b;
+$second-light: #66a5ad;
+$light-color: #c4dfe6;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+// html {
+//   scroll-behavior: smooth !important;
+// }
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  overflow-y: scroll !important;
+  scroll-behavior: smooth !important;
+}
+
+.second-body {
+  overflow-y: hidden !important;
+}
+
+p {
+  line-height: 28px;
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+// utilities coding
+@import "utils";
+
+// navbar coding
+@import "./components/nav";
+
+// hero1 coding
+@import "./components/hero1";
+
+// about coding
+@import "./components/about";
+
+// technology coding
+@import "./components/technology";
+
+// portfolio coding
+@import "./components/portfolio";
+
+// quote coding
+@import "./components/quote";
+
+// contact coding
+@import "./components/contact";
+
+// nav hover coding
+@import "./components/navhover";
